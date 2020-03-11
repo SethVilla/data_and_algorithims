@@ -58,6 +58,58 @@ elif choice == 'b':
 elif choice == 'c':
     draw_c()
 
+#Nested conditionals
+
+if x == y:
+    print 'x and y are equal'
+else:
+    if x < y:
+        print 'x is less than y'
+    else:
+        print 'x is greater than y'
+
+        #Logical operators often provide a way to simplify nested conditional statements. For example, we can rewrite the following code using a single conditional:
+
+if 0 < x:
+    if x < 10:
+        print 'x is a positive single-digit number.'
+        #The print statement is executed only if we make it past both conditionals, so we can get the same effect with the and operator:
+
+if 0 < x and x < 10:
+    print 'x is a positive single-digit number.'
+
+#Recursion
+
+    #It is legal for one function to call another; it is also legal for a function to call itself. It may not be obvious why that is a good thing, but it turns out to be one of the most magical things a program can do. For example, look at the following function:
+
+def countdown(n):
+    if n <= 0:
+        print 'Blastoff!'
+    else:
+        print n
+        countdown(n-1)
+
+        #A function that calls itself is recursive; the process is called recursion.
+
+        #As another example, we can write a function that prints a string n times.
+
+def print_n(s, n):
+    if n <= 0:
+        return
+    print s
+    print_n(s, n-1)
+
+#Infinite recursion
+
+def recurse():
+    recurse()
+
+#Keyboard input
+
+text = input('type something \n')
+print(type(text))
+print (int(text))
+
 #While Loop
 def countdown(n):
     while n > 0:
