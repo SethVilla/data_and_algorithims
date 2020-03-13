@@ -123,6 +123,7 @@ countdown(7)
 
 #3
 
+#3.1
 def check_fermat(a,b,c,n):
   if(n > 2 and a**n + b**n == c**n):
     print('Holy smokes, Fermat was wrong!')
@@ -130,3 +131,60 @@ def check_fermat(a,b,c,n):
     print('No, that doesn’t work.')
 
 check_fermat(3,4,5,3)
+
+#3.2
+
+a = int(input('input value for a\n'))
+
+b = int(input('input value for b\n'))
+
+c = int(input('input value for c\n'))
+
+n = int(input('input value for n\n'))
+
+def check_fermat(a,b,c,n):
+  if(n > 2 and a**n + b**n == c**n):
+    print('Holy smokes, Fermat was wrong!')
+  else:
+    print('No, that doesn’t work.')
+
+check_fermat(a,b,c,n)
+
+#4
+
+#4.1
+
+def is_triangle(a,b,c,):
+  if( a < b + c and b < a + c and c < a + b):
+    print('Yes')
+  else:
+    print('No')
+
+is_triangle(6,4,5)
+
+#4.2
+a = int(input('input value for a\n'))
+
+b = int(input('input value for b\n'))
+
+c = int(input('input value for c\n'))
+
+def is_triangle(a,b,c,):
+  if( a < b + c and b < a + c and c < a + b):
+    print('Yes')
+  else:
+    print('No')
+
+is_triangle(a,b,c)
+
+#5
+#previous sample 
+from swampy.TurtleWorld import *
+
+world = TurtleWorld()
+bob = Turtle()
+print (bob)
+fd(bob, 100)
+lt(bob)
+fd(bob, 100)
+wait_for_user()
